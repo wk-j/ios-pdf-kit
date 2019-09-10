@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		576A05EC23279380002F35CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576A05EB23279380002F35CC /* AppDelegate.swift */; };
+		576A05EE23279380002F35CC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576A05ED23279380002F35CC /* MainViewController.swift */; };
+		576A05F323279381002F35CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576A05F223279381002F35CC /* Assets.xcassets */; };
+		576A05F623279381002F35CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576A05F423279381002F35CC /* LaunchScreen.storyboard */; };
+		576A060123279381002F35CC /* iOSPdfKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576A060023279381002F35CC /* iOSPdfKitTests.swift */; };
+		576A060C23279381002F35CC /* iOSPdfKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576A060B23279381002F35CC /* iOSPdfKitUITests.swift */; };
+		576A061A232794E1002F35CC /* tesla.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 576A0619232794E1002F35CC /* tesla.pdf */; };
+		576A061C2327A7A8002F35CC /* PdfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576A061B2327A7A8002F35CC /* PdfViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		576A05FD23279381002F35CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 576A05E023279380002F35CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 576A05E723279380002F35CC;
+			remoteInfo = iOSPdfKit;
+		};
+		576A060823279381002F35CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 576A05E023279380002F35CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 576A05E723279380002F35CC;
+			remoteInfo = iOSPdfKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		576A05E823279380002F35CC /* iOSPdfKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPdfKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		576A05EB23279380002F35CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		576A05ED23279380002F35CC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		576A05F223279381002F35CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		576A05F523279381002F35CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		576A05F723279381002F35CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		576A05FC23279381002F35CC /* iOSPdfKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSPdfKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		576A060023279381002F35CC /* iOSPdfKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPdfKitTests.swift; sourceTree = "<group>"; };
+		576A060223279381002F35CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		576A060723279381002F35CC /* iOSPdfKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSPdfKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		576A060B23279381002F35CC /* iOSPdfKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPdfKitUITests.swift; sourceTree = "<group>"; };
+		576A060D23279381002F35CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		576A0619232794E1002F35CC /* tesla.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = tesla.pdf; path = ../../FlutterNativeUi/assets/tesla.pdf; sourceTree = "<group>"; };
+		576A061B2327A7A8002F35CC /* PdfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		576A05E523279380002F35CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576A05F923279381002F35CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576A060423279381002F35CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		576A05DF23279380002F35CC = {
+			isa = PBXGroup;
+			children = (
+				576A05EA23279380002F35CC /* iOSPdfKit */,
+				576A05FF23279381002F35CC /* iOSPdfKitTests */,
+				576A060A23279381002F35CC /* iOSPdfKitUITests */,
+				576A05E923279380002F35CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		576A05E923279380002F35CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				576A05E823279380002F35CC /* iOSPdfKit.app */,
+				576A05FC23279381002F35CC /* iOSPdfKitTests.xctest */,
+				576A060723279381002F35CC /* iOSPdfKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		576A05EA23279380002F35CC /* iOSPdfKit */ = {
+			isa = PBXGroup;
+			children = (
+				576A0619232794E1002F35CC /* tesla.pdf */,
+				576A05EB23279380002F35CC /* AppDelegate.swift */,
+				576A05ED23279380002F35CC /* MainViewController.swift */,
+				576A05F223279381002F35CC /* Assets.xcassets */,
+				576A05F423279381002F35CC /* LaunchScreen.storyboard */,
+				576A05F723279381002F35CC /* Info.plist */,
+				576A061B2327A7A8002F35CC /* PdfViewController.swift */,
+			);
+			path = iOSPdfKit;
+			sourceTree = "<group>";
+		};
+		576A05FF23279381002F35CC /* iOSPdfKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				576A060023279381002F35CC /* iOSPdfKitTests.swift */,
+				576A060223279381002F35CC /* Info.plist */,
+			);
+			path = iOSPdfKitTests;
+			sourceTree = "<group>";
+		};
+		576A060A23279381002F35CC /* iOSPdfKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				576A060B23279381002F35CC /* iOSPdfKitUITests.swift */,
+				576A060D23279381002F35CC /* Info.plist */,
+			);
+			path = iOSPdfKitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		576A05E723279380002F35CC /* iOSPdfKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 576A061023279381002F35CC /* Build configuration list for PBXNativeTarget "iOSPdfKit" */;
+			buildPhases = (
+				576A05E423279380002F35CC /* Sources */,
+				576A05E523279380002F35CC /* Frameworks */,
+				576A05E623279380002F35CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSPdfKit;
+			productName = iOSPdfKit;
+			productReference = 576A05E823279380002F35CC /* iOSPdfKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		576A05FB23279381002F35CC /* iOSPdfKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 576A061323279381002F35CC /* Build configuration list for PBXNativeTarget "iOSPdfKitTests" */;
+			buildPhases = (
+				576A05F823279381002F35CC /* Sources */,
+				576A05F923279381002F35CC /* Frameworks */,
+				576A05FA23279381002F35CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				576A05FE23279381002F35CC /* PBXTargetDependency */,
+			);
+			name = iOSPdfKitTests;
+			productName = iOSPdfKitTests;
+			productReference = 576A05FC23279381002F35CC /* iOSPdfKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		576A060623279381002F35CC /* iOSPdfKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 576A061623279381002F35CC /* Build configuration list for PBXNativeTarget "iOSPdfKitUITests" */;
+			buildPhases = (
+				576A060323279381002F35CC /* Sources */,
+				576A060423279381002F35CC /* Frameworks */,
+				576A060523279381002F35CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				576A060923279381002F35CC /* PBXTargetDependency */,
+			);
+			name = iOSPdfKitUITests;
+			productName = iOSPdfKitUITests;
+			productReference = 576A060723279381002F35CC /* iOSPdfKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		576A05E023279380002F35CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = wk;
+				TargetAttributes = {
+					576A05E723279380002F35CC = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					576A05FB23279381002F35CC = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 576A05E723279380002F35CC;
+					};
+					576A060623279381002F35CC = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 576A05E723279380002F35CC;
+					};
+				};
+			};
+			buildConfigurationList = 576A05E323279380002F35CC /* Build configuration list for PBXProject "iOSPdfKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 576A05DF23279380002F35CC;
+			productRefGroup = 576A05E923279380002F35CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				576A05E723279380002F35CC /* iOSPdfKit */,
+				576A05FB23279381002F35CC /* iOSPdfKitTests */,
+				576A060623279381002F35CC /* iOSPdfKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		576A05E623279380002F35CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576A05F623279381002F35CC /* LaunchScreen.storyboard in Resources */,
+				576A05F323279381002F35CC /* Assets.xcassets in Resources */,
+				576A061A232794E1002F35CC /* tesla.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576A05FA23279381002F35CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576A060523279381002F35CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		576A05E423279380002F35CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576A05EE23279380002F35CC /* MainViewController.swift in Sources */,
+				576A05EC23279380002F35CC /* AppDelegate.swift in Sources */,
+				576A061C2327A7A8002F35CC /* PdfViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576A05F823279381002F35CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576A060123279381002F35CC /* iOSPdfKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576A060323279381002F35CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576A060C23279381002F35CC /* iOSPdfKitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		576A05FE23279381002F35CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 576A05E723279380002F35CC /* iOSPdfKit */;
+			targetProxy = 576A05FD23279381002F35CC /* PBXContainerItemProxy */;
+		};
+		576A060923279381002F35CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 576A05E723279380002F35CC /* iOSPdfKit */;
+			targetProxy = 576A060823279381002F35CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		576A05F423279381002F35CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				576A05F523279381002F35CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		576A060E23279381002F35CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		576A060F23279381002F35CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		576A061123279381002F35CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RCJ82V3582;
+				INFOPLIST_FILE = iOSPdfKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wk.iOSPdfKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		576A061223279381002F35CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RCJ82V3582;
+				INFOPLIST_FILE = iOSPdfKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wk.iOSPdfKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		576A061423279381002F35CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSPdfKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wk.iOSPdfKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSPdfKit.app/iOSPdfKit";
+			};
+			name = Debug;
+		};
+		576A061523279381002F35CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSPdfKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wk.iOSPdfKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSPdfKit.app/iOSPdfKit";
+			};
+			name = Release;
+		};
+		576A061723279381002F35CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSPdfKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wk.iOSPdfKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSPdfKit;
+			};
+			name = Debug;
+		};
+		576A061823279381002F35CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSPdfKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wk.iOSPdfKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSPdfKit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		576A05E323279380002F35CC /* Build configuration list for PBXProject "iOSPdfKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576A060E23279381002F35CC /* Debug */,
+				576A060F23279381002F35CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		576A061023279381002F35CC /* Build configuration list for PBXNativeTarget "iOSPdfKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576A061123279381002F35CC /* Debug */,
+				576A061223279381002F35CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		576A061323279381002F35CC /* Build configuration list for PBXNativeTarget "iOSPdfKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576A061423279381002F35CC /* Debug */,
+				576A061523279381002F35CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		576A061623279381002F35CC /* Build configuration list for PBXNativeTarget "iOSPdfKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576A061723279381002F35CC /* Debug */,
+				576A061823279381002F35CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 576A05E023279380002F35CC /* Project object */;
+}
