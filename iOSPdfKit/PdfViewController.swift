@@ -60,26 +60,52 @@ class PdfViewController: UIViewController {
     }
     
     @objc func buttonAction(sender: UIButton!) {
-        show()
+//        show()
+//        writePdf()
     }
     
-    func show() {
+    
+    func writePdf() {
+        let pdfDoc = document?.dataRepresentation()!
+        let temp = getTempPath()
+        let dest = temp.appendingPathComponent("abc.pdf")
+        FileManager.default.createFile(atPath: dest.relativePath,  contents: pdfDoc as Data?, attributes: nil)
+    }
+    
+    func getTempPath() -> URL {
+        
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let logsPath = paths[0].appendingPathComponent("temp")
+        return logsPath
+        
+    }
+
+    
+    func show() {
+        
+        let temp = getTempPath()
+       
         do {
-            try FileManager.default.createDirectory(at: logsPath, withIntermediateDirectories: true, attributes: nil)
+            try FileManager.default.createDirectory(at: temp, withIntermediateDirectories: true, attributes: nil)
         } catch let error as NSError {
             NSLog("Unable to create directory \(error.debugDescription)")
         }
         
         let source = document!.documentURL!
-        let dest = logsPath.appendingPathComponent("xyz.pdf")
+        let dest = temp.appendingPathComponent("xyz.pdf")
+        
         
         do {
             
-            try FileManager.default.copyItem(at: source, to: dest)
+            if !FileManager.default.fileExists(atPath: dest.relativePath) {
+                try FileManager.default.copyItem(at: source, to: dest)
+            }
+            
             let activityVC = UIActivityViewController(activityItems: [dest], applicationActivities: nil)
-            self.present(activityVC, animated: true, completion: nil)
+            present(activityVC, animated: true, completion: nil)
+            
+            //FileManager.default.createFile(atPath: dest.relativePath,  contents: pdfDoc as Data?, attributes: nil)
+                
         }
         catch {
             
