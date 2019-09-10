@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 import PDFKit
+import QuickLook
+
 
 
 class PdfView: UIView {
@@ -26,10 +28,24 @@ class PdfView: UIView {
     }
 }
 
+extension PdfViewController: QLPreviewControllerDataSource {
+    func numberOfPreviewItems(in controller: QLPreviewController) -> Int {
+        return 1
+    }
+    
+    func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem {
+        
+        return self.previewItem as QLPreviewItem
+    }
+}
+
+
 
 
 class PdfViewController: UIViewController {
     var document: PDFDocument?
+    
+    lazy var previewItem = NSURL()
     
     
     override func viewDidLoad() {
@@ -62,14 +78,30 @@ class PdfViewController: UIViewController {
     @objc func buttonAction(sender: UIButton!) {
 //        show()
 //        writePdf()
+        quickLook()
     }
     
+    func quickLook() {
+ 
+       let previewController = QLPreviewController()
+       // Set the preview item to display
+        
+        let url = document?.documentURL
+        guard let x = url else { return }
+        
+        previewItem = NSURL(fileURLWithPath: x.relativePath)
+       
+       previewController.dataSource = self
+       self.present(previewController, animated: true, completion: nil)
+        
+    }
     
     func writePdf() {
         let pdfDoc = document?.dataRepresentation()!
         let temp = getTempPath()
         let dest = temp.appendingPathComponent("abc.pdf")
         FileManager.default.createFile(atPath: dest.relativePath,  contents: pdfDoc as Data?, attributes: nil)
+      
     }
     
     func getTempPath() -> URL {
