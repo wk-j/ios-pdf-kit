@@ -77,9 +77,9 @@ class PdfViewController: UIViewController {
     }
 
     @objc func buttonAction(sender: UIButton!) {
-//        show()
+        show()
 //        writePdf()
-        quickLook()
+//        quickLook()
     }
 
     func quickLook() {
